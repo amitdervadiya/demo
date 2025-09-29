@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --blue: #1E3A8A;
+  --grey: #979797;
+}
+
+.root {
+  width: 80%;
+}
+
+body {
+  background-color: white;
+  justify-content: center;
+  display: flex;
+
+
+}
+
+.hero {
+  background-image: url(assets/hero.jpg);
+  background-size: cover;
+  background-position: end;
+  background-repeat: no-repeat;
+}
+
+.buy {
+  background-image: url(assets/he.png);
+  background-size: cover;
+  background-position: end;
+  background-repeat: no-repeat;
+}
+
+.filterbar {
+  background-color: white;
+}
+
+@media (min-width: 0px) and (max-width: 720px) {
+  .filterbar {
+    background-color: transparent; /* instead of none */
+  }
+}
